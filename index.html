@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoTracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Digital Coin Tracker</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search cryptocurrency (e.g., BTC, Bitcoin)">
+      <select id="sortSelect">
+        <option value="price">Sort by Price</option>
+        <option value="marketCap">Sort by Market Cap</option>
+        <option value="priceChange24h">Sort by Price Change in 24h</option>
+
+      </select>
+      <button id="toggleMode">Dark Mode</button>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <section id="cryptoList" class="crypto-list">
+    </section>
+  </main>  
+  <script src="script.js"></script>
+</body>
+</html>
